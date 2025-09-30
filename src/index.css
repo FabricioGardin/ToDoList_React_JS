@@ -39,11 +39,12 @@ button {
 .moveButton:hover {
   background-color: rgb(7, 108, 167);
 }
-input [type="text"] {
+input[type="text"] {
   padding: 10px;
   font-size: 1.6rem;
   border: 2px solid black;
   border-radius: 5px;
+  margin-right: 10px;
 }
 ol {
   padding: 0;
@@ -60,10 +61,20 @@ li {
 }
 .text {
   flex: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  text-align: left;
+}
+.btnContainer {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
 }
 .deleteButton,
 .moveButton {
   padding: 8px 12px;
   font-size: 1.4rem;
   margin-left: 10px;
+  flex-shrink: 0;
 }
